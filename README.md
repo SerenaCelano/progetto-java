@@ -9,7 +9,7 @@ ci sono due file .java:
 1) MainProdotto.java;
 2) Prodotto.java
 
-1) Nel codice MainProdotto.java è il main che stampa il MENU da cui l'utente può scegliere l'operazione da fare tra le seguenti:
+Nel codice MainProdotto.java è il main che stampa il MENU da cui l'utente può scegliere l'operazione da fare tra le seguenti:
    1. aggiungo prodotto (nome, prezzo, quantità)
    2. visualizzare un catalogo (mostra l'elenco dei prodotti)
    3. cercare un prodotto (ricerca in base al nome)
@@ -24,7 +24,7 @@ ci sono due file .java:
    Il codice MainProdotto.java è stato progettato utilizzando lo SWITCH in modo tale che ogni CASE corrisponde ad un'opzione che può 
    fare l'utente tra le 7 proposte.
    
-2) Il codice Prodotto.java è la classe per generare OGGETTI di tipo PRODOTTO. Ad ogni oggetto sono associati gli attributi di istanza:
+Il codice Prodotto.java è la classe per generare OGGETTI di tipo PRODOTTO. Ad ogni oggetto sono associati gli attributi di istanza:
    - nomeProdotto;
    - prezzo;
    - quantita.
