@@ -1,37 +1,22 @@
-package Giorno4;
-
 import java.util.ArrayList;
 
 public class Prodotto {
-    //
-    // Simulazione di un negozio di abbigliamento
-    // Sono un negozio di una catena e devo
-    // implementare un servizio
-    // 1) aggiungo prodotto (nome prezzo quantita)
-    // 2) visualizzare un catalogo (mostro l'elenco dei prodotti)
-    // 3) cercare un prodotto (cerco in base al nome)
-    // 4) aggiungere il prodotto al carrello (nome prodotto e quantita)
-    // 5) visualizzo il carrello (mostro nome e quantita)
-    // 6) effettua l'acquisto (confermo l'acquisto e tolgo dalla quantita del
-    // catalogo)
-    // 7) esci (Un solo exit point, qui si chiude il programma)
 
-    // definizione degli attributi
-    private String nome_prodotto;
+    // definizione degli attributi di istanza
+    private String nomeProdotto;
     private double prezzo;
     private int quantita;
 
-
     // costruttore, che è un metodo
-    public Prodotto(String nome_prodotto, double prezzo, int quantita) {
-        this.nome_prodotto = nome_prodotto; // con this faccio Libro
+    public Prodotto(String nomeProdotto, double prezzo, int quantita) {
+        this.nomeProdotto = nomeProdotto; // con this faccio Libro
         this.prezzo = prezzo;
         this.quantita = quantita;
     }
 
     // definiamo i metodi per ottenere gli attributi di istanza
     public String ottengoNomeProdotto() {
-        return nome_prodotto;
+        return nomeProdotto;
 
     }
 
@@ -44,8 +29,15 @@ public class Prodotto {
     }
 
     public void stampaInfoProdotto() {
-        System.out.println("il nome del prodotto è: " + nome_prodotto + " \nil prezzo del prodotto è: " + prezzo + " \nla quantità del prodotto è: " + quantita);
+        System.out.println("il nome del prodotto è: " + nomeProdotto + " \nil prezzo del prodotto è: " + prezzo
+                + " \nla quantità del prodotto è: " + quantita);
     }
 
+    // Sovrascrive il metodo toString() per ottenere una rappresentazione
+    // significativa
+    @Override // sovrascrizione di un metodo
+    public String toString() {
+        return "Prodotto : nome=" + nomeProdotto + ", prezzo=" + prezzo + ", quantità=" + quantita +" ";
+    }
 
 }
